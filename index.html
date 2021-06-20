@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700|Inter|Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles.css">
+    <title>SterlingMall</title>
+</head>
+<body>
+    <div class="main">
+        
+        <div class="header">    
+            <div class="nav">
+                
+                <div class="nav-logo">
+                    <img src="images/7vWb3enE_400x400.jpg">
+                <span><a href="home.html"><strong>SterlingMall</strong></a></span>
+                <span>NG</span>
+                </div>
+                <div class="searchbox">
+                <input type="search" class="searchbar" placeholder="Search">
+                <img class="search-icon"
+                src="icons/icons8-search-30.png">
+                </div>
+                <div class="nav-links">
+                    <span><a href="#" onclick="change()" id="LoginStatus">Login</a></span>
+                    <span><a href="#">Help</a></span>
+                    <span><a href="#">Wishlist</a></span>
+                    <span><a href="#">Cart</a></span>
+                  </div>
+            </div>
+        </div>
+        <div class="main-body ">
+            <div  class="content">                
+                <div class="section1">
+                    <div >                  
+                        <a href="#" class="shopbtn">Home</a>
+                        <a href="#" class="shopbtn">Subscribe</a>
+                        <a href="#" class="shopbtn">Sell With Us</a>
+                        <a href="#" class="shopbtn">About Us</a>
+                        <a href="#" class="shopbtn">Contact Us</a>
+                    </div> 
+                </div>
+                    
+                
+                <div class="section2">
+                    <h3>Recommended For You</h3>
+                    <div class="add-product">
+                        <a href="#" class="shopbtn" type="button" id="addProductModalToggler">Add a product</a>
+                      </div>
+                    <ul class="product-list" id="productList">
+                        <li class="item-wrapper">
+                            
+                            <div class="block-imgs"><img src="images/hand-washing-4818792_1280.jpg" alt="Hand Washing Tutorials" class="prod-img"></div>
+                            <div class="blocks">  
+                            <div>                      
+                            <div class="item-name">
+                            <h3 title="Hand Washing">Hand Washing Tutorials</h3>
+                            </div>
+                            <div class="prod-price">
+                                <p>N1,500.00</p>
+                            </div>
+                            </div>
+                            </div> 
+                            <div class="bottom-section">
+                                <a href="#">Add to Wishlist</a>
+                                <a href="#">Add to cart</a>
+                              </div>
+                            
+                        </li>
+                        <li class="item-wrapper">
+                            
+                            <div class="block-imgs"><img src="Images/shopping-4974313_1280.jpg" alt="Omega Tissue Rolls" class="prod-img"></div>
+                            <div class="blocks">  
+                            <div>                      
+                            <div class="item-name">
+                            <h3 title="Tissue Rolls">Omega Tissue Rolls</h3>
+                            </div>
+                            <div class="prod-price">
+                                <p>N6,500.00</p>
+                            </div>
+                            </div>
+                            </div> 
+                            <div class="bottom-section">
+                                <a href="#">Add to Wishlist</a>
+                                <a href="#">Add to cart</a>
+                              </div>
+                            
+                        </li>
+                        <li class="item-wrapper">
+                            
+                            <div class="block-imgs"><img src="Images/mask-4964590_1280.png" alt="N-38 Face Mask" class="prod-img"></div>
+                            <div class="blocks">  
+                            <div>                      
+                            <div class="item-name">
+                            <h3 title="N-38 Face Mask">N-38 Face Mask</h3>
+                            </div>
+                            <div class="prod-price">
+                                <p>N2,500.00</p>
+                            </div>
+                            </div>
+                            </div> 
+                            <div class="bottom-section">
+                                <a href="#">Add to Wishlist</a>
+                                <a href="#">Add to cart</a>
+                              </div>
+                            
+                        </li>
+                        <li class="item-wrapper">
+                            
+                            <div class="block-imgs"><img src="Images/virus-4937553_640.jpg" alt="Covid Vaccine" class="prod-img"></div>
+                            <div class="blocks">  
+                            <div>                      
+                            <div class="item-name">
+                            <h3 title="Covid Vaccine">Covid Vaccine</h3>
+                            </div>
+                            <div class="prod-price">
+                                <p>N45,500.00</p>
+                            </div>
+                            </div>
+                            </div> 
+                            <div class="bottom-section">
+                                <a href="#">Add to Wishlist</a>
+                                <a href="#">Add to cart</a>
+                              </div>
+                        </li>
+                        <li class="item-wrapper">                            
+                            <div class="block-imgs"><img src="Images/hotdog-6338946_1280.webp" alt="Hot Dog" class="prod-img"></div>
+                            <div class="blocks">  
+                            <div>                      
+                            <div class="item-name">
+                            <h3 title="Hot Dog">Hot Dog</h3>
+                            </div>
+                            <div class="prod-price">
+                                <p>N1,500.00</p>
+                            </div>
+                            </div>
+                            </div> 
+                            <div class="bottom-section">
+                                <a href="#">Add to Wishlist</a>
+                                <a href="#">Add to cart</a>
+                              </div>
+                        </li>
+                        <li class="item-wrapper">                            
+                            <div class="block-imgs"><img src="Images/coffee-2306471__480.jpg" alt="Coffee" class="prod-img"></div>
+                            <div class="blocks">  
+                            <div>                      
+                            <div class="item-name">
+                            <h3 title="Coffee">Coffee</h3>
+                            </div>
+                            <div class="prod-price">
+                                <p>N2,500.00</p>
+                            </div>
+                            </div>
+                            </div> 
+                            <div class="bottom-section">
+                                <a href="#">Add to Wishlist</a>
+                                <a href="#">Add to cart</a>
+                              </div>
+                        </li>                  
+                        <li class="item-wrapper">                            
+                            <div class="block-imgs"><img src="Images/monitor-1307227_640.jpg" alt="Core-Banking Solution" class="prod-img"></div>
+                            <div class="blocks">  
+                            <div>                      
+                            <div class="item-name">
+                            <h3 title="Core-Banking Solution">Core-Banking Solution</h3>
+                            </div>
+                            <div class="prod-price">
+                                <p>N752,500,000.00</p>
+                            </div>
+                            </div>
+                            </div> 
+                            <div class="bottom-section">
+                                <a href="#">Add to Wishlist</a>
+                                <a href="#">Add to cart</a>
+                              </div>
+                        </li> 
+                        <li class="item-wrapper">                            
+                            <div class="block-imgs"><img src="Images/laptop-6332544_1280.jpg" alt="Desk Office" class="prod-img"></div>
+                            <div class="blocks">  
+                            <div>                      
+                            <div class="item-name">
+                            <h3 title="Desk Office">Desk Office</h3>
+                            </div>
+                            <div class="prod-price">
+                                <p>N652,500.00</p>
+                            </div>
+                            </div>
+                            </div> 
+                            <div class="bottom-section">
+                                <a href="#">Add to Wishlist</a>
+                                <a href="#">Add to cart</a>
+                              </div>
+                        </li> 
+                        <li class="item-wrapper">                            
+                            <div class="block-imgs"><img src="Images/galaxy-4828098_640.jpg" alt="Space Ship" class="prod-img"></div>
+                            <div class="blocks">  
+                            <div>                      
+                            <div class="item-name">
+                            <h3 title="Space Ship">Space Ship</h3>
+                            </div>
+                            <div class="prod-price">
+                                <p>N6,252,500,000.00</p>
+                            </div>
+                            </div>
+                            </div> 
+                            <div class="bottom-section">
+                                <a href="#">Add to Wishlist</a>
+                                <a href="#">Add to cart</a>
+                              </div>
+                        </li> 
+                      
+                    </ul>
+                </div>
+                <hr>
+                
+                
+            </div>
+            <!-- modal here -->   
+           
+            <div class="add-new-product hide-me" id="addNewProductModal">
+                <form class="product-form" id="newProductForm">
+                         
+              <div class="form-header">
+                <i class="fas fa-times-circle" id="closeModalIcon"></i>
+              </div>
+              <div class="form-group">
+                <label for="newProdName">Product Name</label>
+                <input type="text" placeholder="Type product name here" id="newProdName">
+              </div>
+               <div class="form-group">
+                <label for="newProdSalePrice">Sale Price (N)</label>
+                <input type="text" placeholder="e.g. 1,500.00" id="newProdSalePrice">
+              </div>
+              <div class="form-group">
+                <label for=" newProdImageLink">Image link</label>
+                <input type="text"
+                  placeholder="img/cdn.jpg"
+                  id="newProdImageLink">
+              </div>
+              <div class="btn-wrapper"><button class="add-product-btn" id="addProductBtn">Add new product</button></div>
+               
+            </div>
+        </div>
+    </div>
+    </script>
+          <script src="main.js">
+        
+    </script>
+</body>
+</html>
